@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Professional portfolio showcasing my skills, projects, and experience in web development and software engineering.">
+    <meta name="keywords" content="portfolio, web developer, software engineer, full stack developer, projects, skills">
+    <meta name="author" content="Your Name">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:title" content="Your Name - Portfolio">
+    <meta property="og:description" content="Professional portfolio showcasing my skills, projects, and experience in web development and software engineering.">
+    <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourdomain.com/">
+    <meta property="twitter:title" content="Your Name - Portfolio">
+    <meta property="twitter:description" content="Professional portfolio showcasing my skills, projects, and experience in web development and software engineering.">
+    <meta property="twitter:image" content="https://yourdomain.com/images/og-image.jpg">
+    
+    <title>Your Name - Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Analytics (Replace UA-XXXXXXXXX-X with your tracking ID) -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXXXXX-X');
+    </script>
+    -->
+    <!-- Critical CSS -->
+    <style>
+        /* Critical CSS for initial render */
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --dark-color: #343a40;
+            --light-color: #f8f9fa;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: var(--dark-color);
+            transition: all 0.3s ease;
+        }
+        .hero-section {
+            padding-top: 80px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        /* Add other critical styles here */
+    </style>
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style">
+    <!-- Defer non-critical CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+    <!-- Preload critical JavaScript -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" as="script">
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.js" as="script">
+    <link rel="preload" href="main.js" as="script">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Nagaraju</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold">Nagaraju</h1>
+                    <h2 class="text-primary">Data Scientist</h2>
+                    <p class="lead">Passionate about transforming data into actionable insights through advanced analytics and machine learning.</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/nagaraju" class="me-3" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/nagaraju" class="me-3" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/nagaraju" class="me-3" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="images/profile.jpg" alt="Profile" class="img-fluid rounded-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Projects</h2>
+            <div class="row g-4">
+                <!-- Project Card 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100">
+                        <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Customer Churn Prediction</h5>
+                            <p class="card-text">Developed a machine learning model to predict customer churn with 85% accuracy, helping reduce customer attrition by 30%.</p>
+                            <div class="tech-stack">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-primary">Scikit-learn</span>
+                                <span class="badge bg-primary">Pandas</span>
+                            </div>
+                            <div class="mt-3">
+                                <a href="https://github.com/nagaraju/customer-churn-prediction" class="btn btn-outline-primary me-2" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="https://customer-churn-prediction-demo.com" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-category">
+                        <h4>Programming & Tools</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fab fa-python"></i> Python</li>
+                            <li><i class="fas fa-database"></i> SQL</li>
+                            <li><i class="fas fa-file-excel"></i> Excel</li>
+                            <li><i class="fas fa-chart-line"></i> Power BI</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-category">
+                        <h4>Machine Learning</h4>
+                        <ul class="list-unstyled">
+                            <li>Supervised Learning</li>
+                            <li>Unsupervised Learning</li>
+                            <li>Deep Learning</li>
+                            <li>Natural Language Processing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-category">
+                        <h4>Data Analysis</h4>
+                        <ul class="list-unstyled">
+                            <li>Statistical Analysis</li>
+                            <li>Data Visualization</li>
+                            <li>Data Cleaning</li>
+                            <li>Feature Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Resume</h2>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h3>Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>Master's in Data Science</h4>
+                            <p class="text-muted">University Name - 2022</p>
+                            <p>Specialized in Machine Learning and Big Data Analytics. Thesis on "Advanced Predictive Modeling Techniques".</p>
+                        </div>
+                        <!-- Add more education items -->
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h3>Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>Data Scientist</h4>
+                            <p class="text-muted">Company Name - 2022-Present</p>
+                            <p>Led multiple data science projects, implemented machine learning models, and delivered actionable insights to stakeholders.</p>
+                        </div>
+                        <!-- Add more experience items -->
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="resume.pdf" class="btn btn-primary" download>Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Blog</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100">
+                        <img src="images/blog1.jpg" class="card-img-top" alt="Blog Post 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Understanding Machine Learning Models</h5>
+                            <p class="card-text">A comprehensive guide to different types of machine learning models and their applications in real-world scenarios.</p>
+                            <a href="https://blog.example.com/machine-learning-models" class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more blog cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Contact</h2>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="contact-info">
+                        <h4>Get in Touch</h4>
+                        <p><i class="fas fa-envelope"></i> nagaraju@example.com</p>
+                        <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 Nagaraju. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="https://github.com/nagaraju" class="text-white me-3" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/nagaraju" class="text-white me-3" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/nagaraju" class="text-white" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="main.js" defer></script>
+    <!-- Add loading state for JavaScript -->
+    <noscript>
+        <style>
+            .no-js-message {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                background: #f8d7da;
+                color: #721c24;
+                padding: 10px;
+                text-align: center;
+                z-index: 9999;
+            }
+        </style>
+        <div class="no-js-message">
+            Please enable JavaScript to view this website properly.
+        </div>
+    </noscript>
+</body>
+</html> 
